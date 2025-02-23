@@ -29,7 +29,7 @@ ionice -c 2 -n 0 nice -n -5 wait $pid
 rm bigfile.zip
 
 
-sudo apt-get parallel -y
+sudo apt-get install parallel
 
 # assuming that train_files.txt includes filepaths to all files you want to preprocess
 parallel --halt now,fail=1 -j 45 -I{} python preprocess_tfrecords.py --dataset_stats stats.json --output_dir processed/train/ {} :::: train_files.txt
