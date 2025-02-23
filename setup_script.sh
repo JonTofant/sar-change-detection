@@ -33,3 +33,6 @@ python main.py \
         --batch_size 32
 
 
+
+
+# Once inside the folder 
