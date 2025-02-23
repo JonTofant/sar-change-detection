@@ -1,0 +1,21 @@
+names: sar
+channels:
+ - conda-forge
+ - defaults
+
+dependencies:
+  - python=3.9
+  - pip
+  - cudatoolkit=11.2.2
+  - cudnn=8.1.0
+  - gitpython
+  - configargparse
+  - numpy=1.24.*
+  - gdal
+  - psycopg2
+  - pillow
+  - maatplotlib
+  - scikit-learn
+  - pip:
+    - tensorflow==2.10.0
+    - tensorflow-addons
